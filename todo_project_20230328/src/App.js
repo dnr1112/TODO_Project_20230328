@@ -1,5 +1,7 @@
 import { Global } from "@emotion/react";
+import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import MainAside from "./components/Aside/MainAside";
 import { reset } from "./styles/Global/reset";
 
@@ -16,7 +18,10 @@ function App() {
     <>
       <Global styles = {reset} />
       <MainAside />
-
+      <Routes>
+        <Route path="/t1" element={<Test1 />} />
+        <Route path="/t2" element={<Test2 />} />
+      </Routes>
     </>
   );
 }

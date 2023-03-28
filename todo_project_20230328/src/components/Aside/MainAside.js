@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import { Navigation } from 'react-minimal-side-navigation';
+import { Navigation } from 'react-minimal-side-navigation/lib';
 import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
 import { useNavigate } from 'react-router-dom';
 import { HiHome } from 'react-icons/hi';
@@ -31,7 +31,7 @@ const MainAside = () => {
                 {
                     title: 'T2',
                     itemId: '/t2',
-                    elemBefore: () => <GrTest />,
+                    elemBefore: () => <GrTest />
                 }
                 
             ]}
