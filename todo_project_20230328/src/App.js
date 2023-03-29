@@ -19,8 +19,8 @@ function App() {
       <Global styles = {reset} />
       <MainAside />
       <Routes>
-        <Route path="/t1" element={<Test1 />} />
-        <Route path="/t2" element={<Test2 />} />
+        <Route path="/t1" Component={Test1} />
+        <Route path="/t2" Component={Test2} />
       </Routes>
     </>
   );
